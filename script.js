@@ -1,16 +1,13 @@
-console.dir(document);
-console.log(document.location.href);
+// Get the element with the ID "heading"
+const element = document.getElementById("heading");
 
-// Set the href attribute of the anchor element to the current document URL
-const documentHref = document.location.href;
-const element = document.getElementById("link");
-element.href = documentHref;
+// Get the innerText of the element
+// innerText respects the CSS styles and won't include hidden text
+const innerText = element.innerText;
+console.log(innerText);
 
-// Log all elements in the document and iterate over them, logging each one
-console.log(document.all);
-
-for (x of document.all) {
-  console.log(x);
-}
-
+// Get the textContent of the element
+// textContent includes all text within the element, regardless of CSS styles
+const textContent = element.textContent;
+console.log(textContent);
 
