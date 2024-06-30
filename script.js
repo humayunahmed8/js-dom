@@ -1,7 +1,14 @@
-// Get the element with the ID "heading"
-const element = document.getElementById("heading");
+// Get all elements with the class "item"
+const items = document.getElementsByClassName("item");
 
-// Apply red text color, padding, and bottom border
-element.style.color = 'red';
-element.style.paddingBottom = '15px';
-element.style.borderBottom = '1px solid red'; 
+// Log each element with the class "item"
+for (x of items) {
+  console.log(x);
+}
+
+// Loop through each element and apply red text color
+for (let i=0; i<items.length; i++) {
+  items[i].style.color = 'red';
+}
+
+
