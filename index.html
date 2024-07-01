@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JavaScript DOM</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sumit Saha, Learn with Sumit" />
+    <meta name="description" content="We love JavaScript" />
+    <title>DOM - Document Object Model</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <h1 id="header" class="header">To-Do App</h1>
 
-  
-  <div class="container">
-    <ul class="list-item" id="list-items">
-      <div id="heading" style="text-transform: uppercase;">Document Object <span style="display: none;">Model</span></div>
-      <div class="list">
-        <li class="item">Item 1</li>
-        <li class="item">Item 2</li>
-        <li class="item">Item 3</li>
-        <li class="item">Item 4</li>
-        <li class="item">Item 5</li>
-        <li class="item">Item 6</li>
-        <li class="item">Item 7</li>
+      <form class="new-task-container box">
+        <label for="new-task">Add New Task</label>
+        <input type="text" id="new-task" />
+        <input type="submit" id="addTask" value="Add Task" />
+      </form>
+
+      <div class="todo-list box">
+        <h2>Incomplete Tasks</h2>
+        <ul id="items">
+          <li class="item">
+            <input type="checkbox" /><label>Task Name</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" /><label>Task Name</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" /><label>Task Name</label>
+          </li>
+        </ul>
       </div>
-    </ul>
-  </div>
 
-  <ul class="list-item">
-    <li class="item">Item 1</li>
-    <li class="item">Item 2</li>
-    <li class="item">Item 3</li>
-    <li class="item">Item 4</li>
-    <li class="item">Item 5</li>
-    <li class="item">Item 6</li>
-    <li class="item">Item 7</li>
-  </ul>
-
-  <ul id="list">
-    <li class="item">Item 1</li>
-    <li class="item">Item 2</li>
-    <li class="item">Item 3</li>
-  </ul>
-
-  <a id="link" href="">Learn More</a>
-
-  <script src="script.js"></script>
-</body>
+      <div class="complete-list box">
+        <h2>Completed Tasks</h2>
+        <ul>
+          <li class="item">Task Name <button class="delete">Delete</button></li>
+        </ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>
