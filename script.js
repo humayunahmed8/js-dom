@@ -1,6 +1,6 @@
 // Parent Child Relation 
 const children = document.querySelector(".list");
-const parent = children.parentElement;
+const grandparent = children.closest(".container");
 
-console.log(parent);
+console.log(grandparent);
 
